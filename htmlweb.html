@@ -1,0 +1,78 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>股掌之間</title>
+    <meta charset="utf-8">
+    <link rel= "stylesheet", href= "CssWeb.css">
+    
+</head>
+
+<body style= "background-color: #EDEDED">
+    <div class= "title"><h2>股掌之間</h2></div>
+    <div class= "body">
+        <div class= "mode">
+            <ul>
+                <li id= "btn1">個股回測</li>
+                <li id= "btn2">設定策略</li>
+            </ul>
+            <div class= "timeselect">
+                <b style= "margin-top: 15px;">時間區間</b>
+                <div class= "selector">
+                <input type="date" name= "bday">
+                <b style= "margin-top: 10px;">=></b>
+                <input type="date" name= "bday">
+                </div>
+            </div>
+            <hr>    
+            <form>
+                <div class="selector">
+                    <b style= "margin-top: 15px ;">資產輸入</b>
+                        <form autocomplete="off" action="/action_page.php">
+                            <div class="autocomplete" style="width:300px;">
+                                <input type="text"  id = "search"  name = "company" placeholder= "請輸入股票代碼" autocomplete="chrome-off">
+                            </div>
+                        </form>>  
+                        
+                        <input class = "second">
+                        <b style= "margin-top: 5px;">%</b>
+                </div>
+                <div class="selector">
+                    <b style= "margin-top: 15px ;">資產輸入</b>
+                        <div class = "wrapper">   
+                                <input type="text"  id = "search"  placeholder= "請輸入股票代碼" autocomplete="chrome-off">
+                                <div class="results">
+                                    <ul>
+                                        <li>
+                                        </li>
+                                    </ul>
+                                </div>   
+                        </div>  
+                        <input class = "second">
+                        <b style= "margin-top: 5px;">%</b>
+                </div>
+            </form>
+            
+            
+            
+            <hr>
+            <div class="timeselect">
+                <b style= "margin-top: 15px;">Total&emsp;&emsp;</b>
+                <div class= "selector">
+                <input style= "visibility: hidden;" placeholder= "請輸入股票代碼" class= "first">
+                <input class= "second" disabled>
+                <b style= "margin-top: 5px;">%</b>
+                </div>
+            </div>
+            <div class= "buttom"><span><b>開始回測</b></span></i></div>
+            
+
+        </div>
+    </div>
+    <span class= "tail"></span>
+    <script  type="module" src="./JSweb.js"></script>
+    
+</body>
+
+
+</html>
